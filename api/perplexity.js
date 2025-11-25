@@ -5,7 +5,6 @@ export default async function handler(req, res) {
   }
   const { prompt } = req.body;
   const apiKey = "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";
-
   const response = await fetch("https://api.perplexity.ai/v1/answer", {
     method: "POST",
     headers: {
